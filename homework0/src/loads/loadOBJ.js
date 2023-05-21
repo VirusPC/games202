@@ -1,3 +1,5 @@
+// 几何信息由.obj文件提供，材质信息由.mtl文件提供。
+
 function loadOBJ(renderer, path, name) {
   const manager = new THREE.LoadingManager();
   manager.onProgress = function (item, loaded, total) {

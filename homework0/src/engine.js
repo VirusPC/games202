@@ -50,7 +50,7 @@ function GAMES202Main() {
 		const panelModel = gui.addFolder('Model properties');
 		const panelModelTrans = panelModel.addFolder('Translation');
 		const panelModelScale = panelModel.addFolder('Scale');
-		panelModelTrans.add(guiParams, 'modelTransX').name('X');
+		// const xController = panelModelTrans.add(guiParams, 'modelTransX').name('X');
 		panelModelTrans.add(guiParams, 'modelTransY').name('Y');
 		panelModelTrans.add(guiParams, 'modelTransZ').name('Z');
 		panelModelScale.add(guiParams, 'modelScaleX').name('X');
@@ -59,6 +59,9 @@ function GAMES202Main() {
 		panelModel.open();
 		panelModelTrans.open();
 		panelModelScale.open();
+		// xController.onChange((...params) => {
+		// 	console.log('x changed', params);
+		// }) 
 	}
 
 	createGUI();
